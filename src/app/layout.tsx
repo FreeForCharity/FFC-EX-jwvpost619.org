@@ -4,36 +4,28 @@ import Header from './../components/header'
 import Footer from './../components/footer'
 import CookieConsent from './../components/cookie-consent'
 import GoogleTagManager, { GoogleTagManagerNoScript } from './../components/google-tag-manager'
-import {
-  openSans,
-  lato,
-  raleway,
-  faustina,
-  cantataOne,
-  faunaOne,
-  montserrat,
-  cinzel,
-} from '@/lib/fonts'
+import { openSans, ebGaramond } from '@/lib/fonts'
 
 // Get basePath for GitHub Pages deployment
 const basePath = process.env.NEXT_PUBLIC_BASE_PATH || ''
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://ffcworkingsite1.org'),
+  metadataBase: new URL('https://freeforcharity.github.io/FFC-EX-jwvpost619.org'),
   title: {
-    default: 'Free For Charity | Reduce Costs, Increase Impact',
-    template: '%s | Free For Charity',
+    default: 'JWV Post 619 | Copper State',
+    template: '%s | JWV Post 619',
   },
   description:
-    'Free For Charity connects students, professionals, and businesses with nonprofits to reduce costs and increase revenues—putting more resources back into their missions.',
+    'Copper State JWV Post 619 supports veterans and their families in the greater Phoenix area through advocacy, social events, and community service.',
   keywords: [
-    'nonprofit',
-    'charity',
-    'volunteer',
-    'donate',
-    'free hosting',
-    'domains',
-    'Microsoft 365',
+    'JWV',
+    'Jewish War Veterans',
+    'Post 619',
+    'veterans',
+    'Arizona',
+    'Sun Lakes',
+    'Chandler',
+    'veteran support',
   ],
   robots: {
     index: true,
@@ -51,27 +43,26 @@ export const metadata: Metadata = {
   },
   openGraph: {
     type: 'website',
-    url: 'https://ffcworkingsite1.org/',
-    siteName: 'Free For Charity',
-    title: 'Free For Charity | Reduce Costs, Increase Impact',
+    url: 'https://freeforcharity.github.io/FFC-EX-jwvpost619.org/',
+    siteName: 'JWV Post 619',
+    title: 'JWV Post 619 | Copper State',
     description:
-      'Connecting students, professionals, and businesses with nonprofits to reduce costs and increase revenues.',
+      'Copper State JWV Post 619 supports veterans and their families in the greater Phoenix area.',
     images: [
       {
-        url: '/web-app-manifest-512x512.png',
+        url: '/Images/jwv/jwv-emblem.jpg',
         width: 512,
         height: 512,
-        alt: 'Free For Charity',
+        alt: 'JWV Post 619 Emblem',
       },
     ],
   },
   twitter: {
     card: 'summary_large_image',
-    site: '@freeforcharity',
-    title: 'Free For Charity | Reduce Costs, Increase Impact',
+    title: 'JWV Post 619 | Copper State',
     description:
-      'Connecting students, professionals, and businesses with nonprofits to reduce costs and increase revenues.',
-    images: ['/web-app-manifest-512x512.png'],
+      'Copper State JWV Post 619 supports veterans and their families in the greater Phoenix area.',
+    images: ['/Images/jwv/jwv-emblem.jpg'],
   },
   icons: {
     icon: [
@@ -92,46 +83,27 @@ export default function RootLayout({
       <head>
         {/* Preconnect to external domains for faster resource loading */}
         <link rel="preconnect" href="https://www.googletagmanager.com" />
-        <link rel="preconnect" href="https://ffcsites.org" />
-        <link rel="preconnect" href="https://www.zeffy.com" />
-        <link rel="preconnect" href="https://widgets.guidestar.org" />
         <link rel="dns-prefetch" href="https://www.googletagmanager.com" />
-        <link rel="dns-prefetch" href="https://ffcsites.org" />
-        <link rel="dns-prefetch" href="https://www.zeffy.com" />
-        <link rel="dns-prefetch" href="https://www.idealist.org" />
 
         {/* Preload critical LCP image */}
         <link
           rel="preload"
           as="image"
-          href={`${basePath}/Images/figma-hero-img.webp`}
+          href={`${basePath}/Images/jwv/jwv-emblem.jpg`}
           fetchPriority="high"
         />
 
         <GoogleTagManager />
       </head>
       <body
-        className={[
-          'antialiased',
-          openSans.variable,
-          lato.variable,
-          raleway.variable,
-          faustina.variable,
-          cantataOne.variable,
-          faunaOne.variable,
-          montserrat.variable,
-          cinzel.variable,
-        ].join(' ')}
+        className={['antialiased', openSans.variable, ebGaramond.variable].join(' ')}
         suppressHydrationWarning={true}
       >
         <GoogleTagManagerNoScript />
-        {/* <PopupProvider> */}
         <Header />
         {children}
         <Footer />
         <CookieConsent />
-        {/* <PopupsRootClient /> */}
-        {/* </PopupProvider> */}
       </body>
     </html>
   )

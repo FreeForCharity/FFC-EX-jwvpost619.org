@@ -1,6 +1,6 @@
 {
-  "name": "Free For Charity",
-  "short_name": "FreeForCharity",
+  "name": "JWV Post 619",
+  "short_name": "JWV619",
   "icons": [
     {
       "src": "/android-chrome-192x192.png",
@@ -13,7 +13,7 @@
       "type": "image/png"
     }
   ],
-  "theme_color": "#ffffff",
+  "theme_color": "#1d3557",
   "background_color": "#ffffff",
   "display": "standalone"
 }
