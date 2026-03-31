@@ -492,11 +492,8 @@ export default function CookiePolicy() {
           <ul className="list-inside list-disc space-y-[4px] pb-[1em]">
             <li className="text-[14px] text-[#666] leading-[24px] font-[500]">
               <strong>Email:</strong>{' '}
-              <a
-                href="mailto:privacy@freeforcharity.github.io/FFC-EX-jwvpost619.org"
-                className="text-blue-600 hover:underline"
-              >
-                privacy@freeforcharity.github.io/FFC-EX-jwvpost619.org
+              <a href="mailto:jwvpost619@gmail.com" className="text-blue-600 hover:underline">
+                jwvpost619@gmail.com
               </a>
             </li>
             <li className="text-[14px] text-[#666] leading-[24px] font-[500]">
@@ -504,8 +501,8 @@ export default function CookiePolicy() {
             </li>
             <li className="text-[14px] text-[#666] leading-[24px] font-[500]">
               <strong>Phone:</strong>{' '}
-              <a href="tel:520-222-8104" className="text-blue-600 hover:underline">
-                520-222-8104
+              <a href="tel:6038180115" className="text-blue-600 hover:underline">
+                (603) 818-0115
               </a>
             </li>
           </ul>

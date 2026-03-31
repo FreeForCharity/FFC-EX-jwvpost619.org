@@ -13,9 +13,10 @@ describe('Footer component', () => {
     expect(footer).toBeInTheDocument()
   })
 
-  it('should display Endorsements section', () => {
+  it('should display organization name', () => {
     render(<Footer />)
-    expect(screen.getByText('Endorsements')).toBeInTheDocument()
+    const matches = screen.getAllByText(/Copper State JWV Post 619/)
+    expect(matches.length).toBeGreaterThan(0)
   })
 
   it('should display Quick Links section', () => {
@@ -23,9 +24,9 @@ describe('Footer component', () => {
     expect(screen.getByText('Quick Links')).toBeInTheDocument()
   })
 
-  it('should display Contact Us section with contact information', () => {
+  it('should display Contact section with contact information', () => {
     render(<Footer />)
-    expect(screen.getByText('Contact Us')).toBeInTheDocument()
+    expect(screen.getByText('Contact')).toBeInTheDocument()
   })
 
   it('should have social media links', () => {
@@ -41,10 +42,10 @@ describe('Footer component', () => {
     expect(screen.getByText(new RegExp(currentYear.toString()))).toBeInTheDocument()
   })
 
-  it('should have GuideStar profile link', () => {
+  it('should have Facebook social link', () => {
     render(<Footer />)
-    const guidestarLink = screen.getByText(/GuideStar Profile/i)
-    expect(guidestarLink).toBeInTheDocument()
+    const fbLink = screen.getByLabelText('Facebook')
+    expect(fbLink).toBeInTheDocument()
   })
 
   it('should have email contact link', () => {

@@ -15,35 +15,38 @@ export const testConfig = {
   /**
    * Mission Video Configuration
    * Used in: tests/mission-video.spec.ts
+   * Note: JWV Post 619 does not have a mission video; these tests will be skipped.
    */
   missionVideo: {
-    ariaLabel: 'Free For Charity mission video',
-    title: "Learn about Free For Charity's mission to help nonprofits reduce costs",
+    ariaLabel: 'JWV Post 619 mission video',
+    title: 'Learn about JWV Post 619 mission to support veterans',
   },
 
   /**
    * Application Form Configuration
    * Used in: tests/application-form.spec.ts
+   * Note: JWV Post 619 does not have an application form; these tests will be skipped.
    */
   applicationForm: {
-    buttonText: 'Apply to Become a Supported Charity',
-    modalTitle: 'Charity Application Form',
-    loadingText: 'Loading application form...',
-    closeButtonAriaLabel: 'Close application form',
+    buttonText: 'Get Involved',
+    modalTitle: 'Contact Form',
+    loadingText: 'Loading form...',
+    closeButtonAriaLabel: 'Close form',
   },
 
   /**
    * Events Section Configuration
    * Used in: tests/events.spec.ts
+   * Note: JWV Post 619 events are on the Who We Are page, not embedded Facebook.
    */
   events: {
     sectionId: 'events',
-    heading: 'Upcoming Events',
-    footerLinkText: 'Events',
+    heading: 'Events',
+    footerLinkText: 'Who We Are',
     iframeTitle: 'Facebook Events',
-    facebookLinkText: 'View all events on Facebook',
-    facebookUrl: 'https://www.facebook.com/freeforcharity',
-    descriptionText: 'volunteer opportunities',
+    facebookLinkText: 'Join Us on Facebook',
+    facebookUrl: 'https://www.facebook.com/groups/471639085511224',
+    descriptionText: 'veterans',
   },
 
   /**
@@ -52,20 +55,8 @@ export const testConfig = {
    */
   socialLinks: {
     facebook: {
-      url: 'facebook.com/freeforcharity',
+      url: 'facebook.com/groups/471639085511224',
       ariaLabel: 'Facebook',
-    },
-    twitter: {
-      url: 'x.com/freeforcharity1',
-      ariaLabel: 'X (Twitter)',
-    },
-    linkedin: {
-      url: 'linkedin.com/company/freeforcharity',
-      ariaLabel: 'LinkedIn',
-    },
-    github: {
-      url: 'github.com/FreeForCharity/FFC_Single_Page_Template',
-      ariaLabel: 'GitHub',
     },
   },
 
@@ -74,27 +65,20 @@ export const testConfig = {
    * Used in: tests/copyright.spec.ts
    */
   copyright: {
-    text: 'All Rights Are Reserved by Free For Charity a US 501c3 Non Profit',
-    searchText: 'All Rights Are Reserved',
+    text: 'Copper State JWV Post 619',
+    searchText: 'Copper State JWV Post 619',
     linkUrl: 'https://freeforcharity.org',
-    linkText: 'https://freeforcharity.org',
+    linkText: 'Free For Charity',
   },
 
   /**
    * Animated Numbers Configuration
    * Used in: tests/animated-numbers.spec.ts
+   * Note: JWV Post 619 does not have animated numbers; these tests will be skipped.
    */
   animatedNumbers: {
-    sectionHeading: 'Results - 2023',
-    statistics: [
-      { description: 'Organizational partners', value: '221' },
-      { description: 'Total volunteers', value: '3' },
-      {
-        description: 'Organizations accessing technical assistance offerings',
-        value: '221',
-      },
-      { description: 'Volunteer hours contributed to the organization', value: '25' },
-    ],
+    sectionHeading: 'Our Accomplishments',
+    statistics: [],
   },
 
   /**
@@ -110,9 +94,9 @@ export const testConfig = {
    * Used in: tests/logo.spec.ts
    */
   logo: {
-    headerAlt: 'Free For Charity',
-    heroAlt: 'Hero image',
-    navBarAriaLabel: 'Free For Charity home',
+    headerAlt: 'JWV Post 619',
+    heroAlt: 'JWV Post 619 Emblem',
+    navBarAriaLabel: 'JWV Post 619 home',
   },
 
   /**

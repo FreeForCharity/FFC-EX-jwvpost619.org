@@ -16,7 +16,7 @@ import { testConfig } from './test.config'
  * Note: Test expectations use values from test.config.ts for easy customization
  */
 
-test.describe('Application Form Button', () => {
+test.describe.skip('Application Form Button — JWV Post 619 does not use this feature', () => {
   test.beforeEach(async ({ page }) => {
     await page.goto('/')
     // Wait for page to be loaded
@@ -245,7 +245,8 @@ test.describe('Application Form Button', () => {
   })
 })
 
-test.describe('Application Form Iframe Loading', () => {
+test.describe
+  .skip('Application Form Iframe Loading — JWV Post 619 does not use this feature', () => {
   test.beforeEach(async ({ page }) => {
     await page.goto('/')
     await page.waitForLoadState('domcontentloaded')
