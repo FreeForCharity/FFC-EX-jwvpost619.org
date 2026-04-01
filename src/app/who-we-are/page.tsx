@@ -1,5 +1,6 @@
 import React from 'react'
 import type { Metadata } from 'next'
+import Link from 'next/link'
 import { assetPath } from '@/lib/assetPath'
 
 export const metadata: Metadata = {
@@ -204,12 +205,12 @@ export default function WhoWeArePage() {
             Whether you want to attend an event, volunteer your time, or become a member, we welcome
             you to be part of our mission to support veterans.
           </p>
-          <a
+          <Link
             href="/contact"
             className="inline-block bg-[#9d8741] text-white px-8 py-3 rounded font-semibold hover:bg-[#b5982e] transition-colors"
           >
             Get Involved
-          </a>
+          </Link>
         </div>
       </section>
     </main>

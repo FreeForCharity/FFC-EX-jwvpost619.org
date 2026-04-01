@@ -1,5 +1,6 @@
 import React from 'react'
 import type { Metadata } from 'next'
+import Link from 'next/link'
 import { assetPath } from '@/lib/assetPath'
 import { homeFaqs } from '@/data/faqs'
 
@@ -23,18 +24,18 @@ export default function HomePage() {
               Join Us in Making a Difference for Veterans
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
-              <a
+              <Link
                 href="/who-we-are"
                 className="inline-block bg-[#9d8741] text-white px-8 py-3 rounded font-semibold hover:bg-[#b5982e] transition-colors text-center"
               >
                 Learn More
-              </a>
-              <a
+              </Link>
+              <Link
                 href="/contact"
                 className="inline-block border-2 border-[#9d8741] text-[#9d8741] px-8 py-3 rounded font-semibold hover:bg-[#9d8741] hover:text-white transition-colors text-center"
               >
                 Get in Touch
-              </a>
+              </Link>
             </div>
           </div>
           <div className="flex-shrink-0">
@@ -139,12 +140,12 @@ export default function HomePage() {
             who served.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <a
+            <Link
               href="/contact"
               className="inline-block bg-[#9d8741] text-white px-8 py-3 rounded font-semibold hover:bg-[#b5982e] transition-colors"
             >
               Contact Us
-            </a>
+            </Link>
             <a
               href="tel:6038180115"
               className="inline-block border-2 border-[#9d8741] text-[#9d8741] px-8 py-3 rounded font-semibold hover:bg-[#9d8741] hover:text-white transition-colors"

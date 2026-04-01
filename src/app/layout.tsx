@@ -39,7 +39,7 @@ export const metadata: Metadata = {
     },
   },
   alternates: {
-    canonical: '/',
+    canonical: './',
   },
   openGraph: {
     type: 'website',
@@ -50,7 +50,7 @@ export const metadata: Metadata = {
       'Copper State JWV Post 619 supports veterans and their families in the greater Phoenix area.',
     images: [
       {
-        url: '/Images/jwv/jwv-emblem.jpg',
+        url: 'Images/jwv/jwv-emblem.jpg',
         width: 512,
         height: 512,
         alt: 'JWV Post 619 Emblem',
@@ -62,7 +62,7 @@ export const metadata: Metadata = {
     title: 'JWV Post 619 | Copper State',
     description:
       'Copper State JWV Post 619 supports veterans and their families in the greater Phoenix area.',
-    images: ['/Images/jwv/jwv-emblem.jpg'],
+    images: ['Images/jwv/jwv-emblem.jpg'],
   },
   icons: {
     icon: [
