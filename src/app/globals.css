@@ -2,16 +2,19 @@
 @import 'tailwindcss';
 
 :root {
-  /* Brand tokens */
-  --ffc-primary: #2a6682;
-  --ffc-accent: #f58629;
-  --ffc-yellow: #f5c045;
-  --ffc-black: #000000;
-  --ffc-white: #ffffff;
+  /* Brand tokens — JWV Post 619 */
+  --jwv-gold: #9d8741;
+  --jwv-navy: #1d3557;
+  --jwv-light-blue: #b5d8ee;
+  --jwv-dark-gray: #535859;
+  --jwv-navy-alt: #304378;
+  --jwv-light: #eeefee;
+  --jwv-black: #000000;
+  --jwv-white: #ffffff;
 
   /* Layout */
-  --ffc-container: 1248px;
-  --ffc-radius-xl: 20px;
+  --jwv-container: 1248px;
+  --jwv-radius-xl: 20px;
 }
 
 html,
@@ -21,62 +24,35 @@ body {
 
 @theme inline {
   /* Tailwind design tokens mapped to brand variables */
-  --color-primary: var(--ffc-primary);
-  --color-accent: var(--ffc-accent);
-  --color-yellow: var(--ffc-yellow);
-  --color-ink: var(--ffc-black);
-  --color-paper: var(--ffc-white);
+  --color-primary: var(--jwv-gold);
+  --color-accent: var(--jwv-navy);
+  --color-highlight: var(--jwv-light-blue);
+  --color-ink: var(--jwv-black);
+  --color-paper: var(--jwv-white);
+  --color-muted: var(--jwv-dark-gray);
+  --color-light: var(--jwv-light);
 
-  --radius-xl: var(--ffc-radius-xl);
-  --container: var(--ffc-container);
+  --radius-xl: var(--jwv-radius-xl);
+  --container: var(--jwv-container);
 
   /* Fonts (provided via next/font and CSS variables on <body>) */
-  --font-serif-display: var(--font-faustina);
-  --font-serif: var(--font-fauna-one);
-  --font-sans: var(--font-lato);
+  --font-serif: var(--font-eb-garamond);
+  --font-sans: var(--font-open-sans);
 }
 
 body {
-  font-family: var(--font-faustina), serif !important;
+  font-family: var(--font-open-sans), sans-serif !important;
   background: var(--color-paper);
   color: var(--color-ink);
 }
-#header {
-  font-family: var(--font-open-sans), sans-serif !important;
-}
-#aria-font {
-  font-family: var(--font-open-sans), sans-serif !important;
-}
-#lato-font {
-  font-family: var(--font-lato), sans-serif !important;
-}
-#montserrat-font {
-  font-family: var(--font-montserrat), sans-serif !important;
-}
-#abeezee {
-  font-family: var(--font-open-sans), sans-serif !important;
-}
-/* Segoe UI is a system font - use native system font stack for best performance (only used 2x) */
-#segoe-font {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif !important;
-}
-#cinzel {
-  font-family: var(--font-cinzel), serif !important;
-}
-#fauna-font {
-  font-family: var(--font-fauna-one), serif !important;
-}
-#cantata-font {
-  font-family: var(--font-cantata-one), serif !important;
-}
-#raleway-font {
-  font-family: var(--font-raleway), sans-serif !important;
-}
-#courier-font {
-  font-family: ui-monospace, 'Courier New', monospace !important;
-}
-#faustina-font {
-  font-family: var(--font-faustina), serif !important;
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-eb-garamond), serif;
 }
 
 /* Screen reader only utility class for accessibility */
@@ -137,19 +113,11 @@ body {
   animation: fadeRight 1s cubic-bezier(0.77, 0, 0.175, 1) 1;
 }
 
-/* Utilities aligned to Figma */
-.ffc-container {
+/* Utilities */
+.jwv-container {
   max-width: var(--container);
   margin-inline: auto;
   padding-inline: 16px;
-}
-
-.clip-diagonal {
-  clip-path: polygon(0 80%, 100% 50%, 100% 100%, 0% 100%);
-}
-
-.ffc-card {
-  @apply bg-paper border-4 rounded-xl shadow;
 }
 
 /* Hide scrollbar globally */

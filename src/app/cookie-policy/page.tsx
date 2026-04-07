@@ -1,8 +1,8 @@
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Cookie Policy | Free For Charity',
-  description: 'Cookie Policy for Free For Charity website',
+  title: 'Cookie Policy | JWV Post 619',
+  description: 'Cookie Policy for JWV Post 619 website',
 }
 
 // Update this date when the policy changes
@@ -12,7 +12,7 @@ export default function CookiePolicy() {
   return (
     <div className="pt-[140px] pb-[54px]">
       <div className="py-[27px] w-[90%] md:w-[80%] mx-auto">
-        <div id="aria-font">
+        <div>
           <h1 className="text-[30px] text-[#333] pb-[10px] leading-[1em] font-[500]">
             <strong>Cookie Policy</strong>
           </h1>
@@ -492,17 +492,17 @@ export default function CookiePolicy() {
           <ul className="list-inside list-disc space-y-[4px] pb-[1em]">
             <li className="text-[14px] text-[#666] leading-[24px] font-[500]">
               <strong>Email:</strong>{' '}
-              <a href="mailto:privacy@freeforcharity.org" className="text-blue-600 hover:underline">
-                privacy@freeforcharity.org
+              <a href="mailto:jwvpost619@gmail.com" className="text-blue-600 hover:underline">
+                jwvpost619@gmail.com
               </a>
             </li>
             <li className="text-[14px] text-[#666] leading-[24px] font-[500]">
-              <strong>Emergency Contact:</strong> Clarke Moyer
+              <strong>Emergency Contact:</strong> JWV Post 619 Administrator
             </li>
             <li className="text-[14px] text-[#666] leading-[24px] font-[500]">
               <strong>Phone:</strong>{' '}
-              <a href="tel:520-222-8104" className="text-blue-600 hover:underline">
-                520-222-8104
+              <a href="tel:6038180115" className="text-blue-600 hover:underline">
+                (603) 818-0115
               </a>
             </li>
           </ul>

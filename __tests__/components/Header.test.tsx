@@ -30,10 +30,10 @@ describe('Header component', () => {
     expect(screen.getByRole('banner')).toBeInTheDocument()
   })
 
-  it('should display the Free For Charity logo', () => {
+  it('should display the JWV Post 619 logo', () => {
     render(<Header />)
     // Check for logo image with alt text
-    expect(screen.getByAltText('Free For Charity')).toBeInTheDocument()
+    expect(screen.getByAltText('JWV Post 619')).toBeInTheDocument()
   })
 
   it('should display Home navigation link', () => {
@@ -56,11 +56,14 @@ describe('Header component', () => {
     expect(buttons.length).toBeGreaterThan(0)
   })
 
-  it('should have search functionality button', () => {
+  it('should have Who We Are navigation link', () => {
     render(<Header />)
-    const buttons = screen.getAllByRole('button')
-    // Should have at least menu and search buttons
-    expect(buttons.length).toBeGreaterThanOrEqual(2)
+    expect(screen.getByText('Who We Are')).toBeInTheDocument()
+  })
+
+  it('should have Contact navigation link', () => {
+    render(<Header />)
+    expect(screen.getByText('Contact')).toBeInTheDocument()
   })
 
   it('should not have accessibility violations', async () => {
