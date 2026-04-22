@@ -2,12 +2,7 @@
   "ci": {
     "collect": {
       "staticDistDir": "./out",
-      "url": [
-        "http://localhost/index.html",
-        "http://localhost/cookie-policy.html",
-        "http://localhost/privacy-policy.html",
-        "http://localhost/terms-of-service.html"
-      ],
+      "url": ["http://localhost/", "http://localhost/who-we-are/", "http://localhost/contact/"],
       "numberOfRuns": 3
     },
     "upload": {

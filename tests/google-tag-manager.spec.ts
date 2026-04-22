@@ -1,6 +1,9 @@
 import { test, expect } from '@playwright/test'
 import { testConfig } from './test.config'
 
+// GTM is not used on this site
+test.skip(true, 'Google Tag Manager is not used on JWV Post 619')
+
 /**
  * Google Tag Manager (GTM) Tests
  *

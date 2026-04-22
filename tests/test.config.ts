@@ -4,17 +4,11 @@
  * This file contains all content-specific values used in E2E tests.
  * When customizing this template for a new organization, update these
  * values to match your content instead of modifying individual test files.
- *
- * This makes it easy to:
- * 1. Identify what needs to change when using the template
- * 2. Keep tests working with customized content
- * 3. Maintain a single source of truth for test expectations
  */
 
 export const testConfig = {
   /**
    * Mission Video Configuration
-   * Used in: tests/mission-video.spec.ts
    * Note: JWV Post 619 does not have a mission video; these tests will be skipped.
    */
   missionVideo: {
@@ -24,7 +18,6 @@ export const testConfig = {
 
   /**
    * Application Form Configuration
-   * Used in: tests/application-form.spec.ts
    * Note: JWV Post 619 does not have an application form; these tests will be skipped.
    */
   applicationForm: {
@@ -36,8 +29,7 @@ export const testConfig = {
 
   /**
    * Events Section Configuration
-   * Used in: tests/events.spec.ts
-   * Note: JWV Post 619 events are on the Who We Are page, not embedded Facebook.
+   * Note: JWV Post 619 events are listed on the home page, not embedded Facebook.
    */
   events: {
     sectionId: 'events',
@@ -51,7 +43,7 @@ export const testConfig = {
 
   /**
    * Social Media Links Configuration
-   * Used in: tests/social-links.spec.ts
+   * Note: JWV Post 619 does not include social media links in the footer.
    */
   socialLinks: {
     facebook: {
@@ -62,18 +54,14 @@ export const testConfig = {
 
   /**
    * Copyright Configuration
-   * Used in: tests/copyright.spec.ts
    */
   copyright: {
-    text: 'Copper State JWV Post 619',
-    searchText: 'Copper State JWV Post 619',
-    linkUrl: 'https://freeforcharity.org',
-    linkText: 'Free For Charity',
+    text: 'Jewish War Veterans Post 619',
+    searchText: 'Jewish War Veterans Post 619',
   },
 
   /**
    * Animated Numbers Configuration
-   * Used in: tests/animated-numbers.spec.ts
    * Note: JWV Post 619 does not have animated numbers; these tests will be skipped.
    */
   animatedNumbers: {
@@ -83,7 +71,7 @@ export const testConfig = {
 
   /**
    * Google Tag Manager Configuration
-   * Used in: tests/google-tag-manager.spec.ts
+   * Note: GTM is not used on this site; these tests will be skipped.
    */
   googleTagManager: {
     id: 'GTM-TQ5H8HPR',
@@ -91,17 +79,16 @@ export const testConfig = {
 
   /**
    * Logo Configuration
-   * Used in: tests/logo.spec.ts
    */
   logo: {
-    headerAlt: 'JWV Post 619',
-    heroAlt: 'JWV Post 619 Emblem',
+    headerAlt: 'Jewish War Veterans Post 619 emblem',
+    heroAlt: 'JWV Post 619 volunteers supporting veterans in the community',
     navBarAriaLabel: 'JWV Post 619 home',
   },
 
   /**
    * Cookie Consent Configuration
-   * Used in: tests/cookie-consent.spec.ts
+   * Note: Cookie consent is not used on this site; these tests will be skipped.
    */
   cookieConsent: {
     bannerHeading: 'We Value Your Privacy',
