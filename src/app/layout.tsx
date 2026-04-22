@@ -2,11 +2,12 @@ import type { Metadata } from 'next'
 import type { ReactNode } from 'react'
 import Script from 'next/script'
 import Link from 'next/link'
+import { RevealInit } from '@/components/reveal-init'
 
 const basePath = process.env.NEXT_PUBLIC_BASE_PATH || ''
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://freeforcharity.github.io/FFC-EX-jwvpost619.org'),
+  metadataBase: new URL('https://jwvpost619.org'),
   title: {
     default: 'Jewish War Veterans Post 619 | Supporting Our Heroes',
     template: '%s | JWV Post 619',
@@ -144,6 +145,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
           </footer>
         </div>
 
+        <RevealInit />
         <Script src={`${basePath}/assets/js/site.js`} strategy="lazyOnload" />
       </body>
     </html>
