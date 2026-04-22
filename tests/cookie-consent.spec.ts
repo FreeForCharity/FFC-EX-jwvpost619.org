@@ -1,6 +1,9 @@
 import { test, expect } from '@playwright/test'
 import { testConfig } from './test.config'
 
+// Cookie consent is not used on this site
+test.skip(true, 'Cookie consent is not used on JWV Post 619')
+
 /**
  * Cookie Consent Tests
  *
