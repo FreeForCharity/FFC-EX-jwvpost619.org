@@ -172,7 +172,10 @@ export default function HomePage() {
         <div className="container">
           <h2 className="section-title reveal">Where, Why, and When</h2>
           <p className="section-subtitle reveal">
-            Programs and gatherings that keep our veteran community connected year-round.
+            Programs and gatherings that keep our veteran community connected year-round.{' '}
+            <Link className="nav-link" href="/events/">
+              View the full calendar →
+            </Link>
           </p>
 
           <div className="event-board">
