@@ -85,9 +85,14 @@ export default function RootLayout({ children }: { children: ReactNode }) {
                   <Link className="nav-link" href="/who-we-are/">
                     Who We Are
                   </Link>
-                  <Link className="nav-link" href="/events/">
-                    Events
-                  </Link>
+                  <a
+                    className="nav-link"
+                    href="http://jwvusa-my.sharepoint.com/:x:/r/personal/mharrison_jwv_org/_layouts/15/doc.aspx?sourcedoc=%7b3306b438-2fed-44a7-8cb4-5d8ad7e30be2%7d&file=post%20619%20roster.xlsx&action=default&mobileredirect=true"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Resources
+                  </a>
                   <Link className="nav-link" href="/contact/">
                     Contact
                   </Link>

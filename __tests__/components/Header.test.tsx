@@ -66,6 +66,11 @@ describe('Header component', () => {
     expect(screen.getByText('Contact')).toBeInTheDocument()
   })
 
+  it('should have Resources navigation link', () => {
+    render(<Header />)
+    expect(screen.getByText('Resources')).toBeInTheDocument()
+  })
+
   it('should not have accessibility violations', async () => {
     const { container } = render(<Header />)
     const results = await axe(container)
