@@ -11,12 +11,18 @@ import { assetPath } from '@/lib/assetPath'
 interface MenuItem {
   label: string
   path: string
+  external?: boolean
 }
 
 const menuItems: MenuItem[] = [
   { label: 'Home', path: '/' },
   { label: 'Who We Are', path: '/who-we-are' },
   { label: 'Contact', path: '/contact' },
+  {
+    label: 'Resources',
+    path: 'http://jwvusa-my.sharepoint.com/:x:/r/personal/mharrison_jwv_org/_layouts/15/doc.aspx?sourcedoc=%7b3306b438-2fed-44a7-8cb4-5d8ad7e30be2%7d&file=post%20619%20roster.xlsx&action=default&mobileredirect=true',
+    external: true,
+  },
 ]
 
 const Header: React.FC = () => {
@@ -68,17 +74,30 @@ const Header: React.FC = () => {
                 <ul className="flex items-center space-x-1 font-semibold">
                   {menuItems.map((item) => (
                     <li key={item.path} className="relative py-6">
-                      <Link
-                        href={item.path}
-                        onClick={handleLinkClick}
-                        className={`flex items-center px-4 py-2 text-sm transition-colors duration-200 rounded ${
-                          isActive(item.path)
-                            ? 'text-[#1d3557] border-b-2 border-[#9d8741]'
-                            : 'text-[#535859] hover:text-[#1d3557]'
-                        }`}
-                      >
-                        {item.label}
-                      </Link>
+                      {item.external ? (
+                        <a
+                          href={item.path}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className={`flex items-center px-4 py-2 text-sm transition-colors duration-200 rounded ${
+                            'text-[#535859] hover:text-[#1d3557]'
+                          }`}
+                        >
+                          {item.label}
+                        </a>
+                      ) : (
+                        <Link
+                          href={item.path}
+                          onClick={handleLinkClick}
+                          className={`flex items-center px-4 py-2 text-sm transition-colors duration-200 rounded ${
+                            isActive(item.path)
+                              ? 'text-[#1d3557] border-b-2 border-[#9d8741]'
+                              : 'text-[#535859] hover:text-[#1d3557]'
+                          }`}
+                        >
+                          {item.label}
+                        </Link>
+                      )}
                     </li>
                   ))}
                 </ul>
@@ -117,17 +136,28 @@ const Header: React.FC = () => {
               <ul className="space-y-2">
                 {menuItems.map((item) => (
                   <li key={item.path}>
-                    <Link
-                      href={item.path}
-                      onClick={handleLinkClick}
-                      className={`block px-4 py-2 rounded-lg text-sm font-semibold ${
-                        isActive(item.path)
-                          ? 'bg-[#b5d8ee]/30 text-[#1d3557]'
-                          : 'text-[#535859] hover:bg-gray-100'
-                      }`}
-                    >
-                      {item.label}
-                    </Link>
+                    {item.external ? (
+                      <a
+                        href={item.path}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="block px-4 py-2 rounded-lg text-sm font-semibold text-[#535859] hover:bg-gray-100"
+                      >
+                        {item.label}
+                      </a>
+                    ) : (
+                      <Link
+                        href={item.path}
+                        onClick={handleLinkClick}
+                        className={`block px-4 py-2 rounded-lg text-sm font-semibold ${
+                          isActive(item.path)
+                            ? 'bg-[#b5d8ee]/30 text-[#1d3557]'
+                            : 'text-[#535859] hover:bg-gray-100'
+                        }`}
+                      >
+                        {item.label}
+                      </Link>
+                    )}
                   </li>
                 ))}
               </ul>
