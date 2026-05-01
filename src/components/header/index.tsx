@@ -79,9 +79,7 @@ const Header: React.FC = () => {
                           href={item.path}
                           target="_blank"
                           rel="noopener noreferrer"
-                          className={`flex items-center px-4 py-2 text-sm transition-colors duration-200 rounded ${
-                            'text-[#535859] hover:text-[#1d3557]'
-                          }`}
+                          className="flex items-center px-4 py-2 text-sm transition-colors duration-200 rounded text-[#535859] hover:text-[#1d3557]"
                         >
                           {item.label}
                         </a>
