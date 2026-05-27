@@ -130,11 +130,6 @@ export default function RootLayout({ children }: { children: ReactNode }) {
               <div>
                 <h3>Meeting Locations</h3>
                 <p>
-                  <strong>9532 E Riggs Rd</strong>
-                  <br />
-                  Chandler, AZ 85248-7463
-                </p>
-                <p>
                   <strong>24218 S Oakwood Blvd</strong>
                   <br />
                   Sun Lakes, AZ 85248
