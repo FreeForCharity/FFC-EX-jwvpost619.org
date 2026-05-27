@@ -101,12 +101,7 @@ export default function ContactPage() {
             <article className="card reveal">
               <h3>Meeting Locations</h3>
               <p>
-                <strong>Physical Address (meetings)</strong>
-                <br />
-                9532 E Riggs Rd, Chandler, AZ 85248-7463
-              </p>
-              <p>
-                <strong>Additional listed location</strong>
+                <strong>Oakwood Clubhouse</strong>
                 <br />
                 24218 S Oakwood Blvd, Sun Lakes, AZ 85248
               </p>
@@ -116,8 +111,8 @@ export default function ContactPage() {
             <article className="card reveal">
               <h3>Map</h3>
               <iframe
-                title="Map to 9532 E Riggs Rd, Chandler, Arizona"
-                src="https://www.google.com/maps?q=9532+E+Riggs+Rd,+Chandler,+AZ+85248&output=embed"
+                title="Map to Oakwood Clubhouse, Sun Lakes, Arizona"
+                src="https://www.google.com/maps?q=24218+S+Oakwood+Blvd,+Sun+Lakes,+AZ+85248&output=embed"
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
                 style={{ width: '100%', minHeight: '260px', border: 0, borderRadius: '12px' }}
