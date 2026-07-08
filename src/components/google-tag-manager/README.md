@@ -26,14 +26,18 @@ Google Tag Manager (GTM) is a tag management system that allows you to manage an
 
 ### Setting Your GTM ID
 
-The GTM container ID is hardcoded directly in the component file. To update it:
+The GTM container ID is read from the shared analytics config, so there is a single
+place to change it. To update it:
 
-1. Open `src/components/GoogleTagManager/index.tsx`
-2. Update the `GTM_ID` constant with your actual GTM container ID:
+1. Open `src/lib/analytics.config.ts`
+2. Update the `gtmId` (and, if needed, `gaMeasurementId`) value:
 
-```tsx
-// Google Tag Manager ID - Update this with your actual GTM container ID
-const GTM_ID = 'GTM-XXXXXXX' // Replace with your actual GTM ID
+```ts
+export const analyticsConfig = {
+  gtmId: 'GTM-XXXXXXX', // Replace with your actual GTM container ID
+  gaMeasurementId: 'G-XXXXXXXXXX', // Replace with your actual GA4 measurement ID
+  // ...
+} as const
 ```
 
 Replace `GTM-XXXXXXX` with your actual GTM container ID from Google Tag Manager (e.g., `GTM-ABC1234`).

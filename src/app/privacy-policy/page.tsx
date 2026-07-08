@@ -191,6 +191,45 @@ export default function PrivacyPolicy() {
             </li>
           </ul>
 
+          <p className="text-[14px] text-[#666] pb-[10px] leading-[24px] font-[500] mt-[1em]">
+            <strong>3.6. Website Analytics (Google Analytics 4 &amp; Google Tag Manager)</strong>
+          </p>
+          <p className="text-[14px] text-[#666] pb-[10px] leading-[24px] font-[500]">
+            We use Google Tag Manager to load Google Analytics 4 (GA4) so we can understand
+            aggregate, non-identifying usage of this website — for example, which pages are visited
+            and how visitors reach us. This helps us improve the site.
+          </p>
+          <ul className="list-inside list-disc space-y-[4px] pb-[1em]">
+            <li className="text-[14px] text-[#666] leading-[24px] font-[500]">
+              <strong>Cookies used:</strong> By default, GA4 sets a first-party analytics cookie (
+              <code>_ga</code>, and related <code>_ga_*</code> cookies) to distinguish visitors and
+              maintain session state.
+            </li>
+            <li className="text-[14px] text-[#666] leading-[24px] font-[500]">
+              <strong>Runs by default, and you can opt out:</strong> Analytics runs when you arrive,
+              but you are always free to decline. Our cookie-consent banner lets you decline
+              analytics on this browser — declining stops analytics going forward and deletes the
+              analytics cookies described above.
+            </li>
+            <li className="text-[14px] text-[#666] leading-[24px] font-[500]">
+              <strong>More detail:</strong> For the full list of analytics cookies and how to manage
+              them, see our{' '}
+              <a href="/cookie-policy/" className="text-[#007bff] underline">
+                Cookie Policy
+              </a>
+              . Google&apos;s handling of this data is described in the{' '}
+              <a
+                href="https://policies.google.com/privacy"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-[#007bff] underline"
+              >
+                Google Privacy Policy
+              </a>
+              .
+            </li>
+          </ul>
+
           {/* Section 4 */}
           <ol className="list-decimal list-inside pb-[1em]" start={4}>
             <li>
