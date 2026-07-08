@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import Link from 'next/link'
 
 export const metadata: Metadata = {
   title: 'Privacy Policy | JWV Post 619',
@@ -214,9 +215,9 @@ export default function PrivacyPolicy() {
             <li className="text-[14px] text-[#666] leading-[24px] font-[500]">
               <strong>More detail:</strong> For the full list of analytics cookies and how to manage
               them, see our{' '}
-              <a href="/cookie-policy/" className="text-[#007bff] underline">
+              <Link href="/cookie-policy/" className="text-[#007bff] underline">
                 Cookie Policy
-              </a>
+              </Link>
               . Google&apos;s handling of this data is described in the{' '}
               <a
                 href="https://policies.google.com/privacy"
