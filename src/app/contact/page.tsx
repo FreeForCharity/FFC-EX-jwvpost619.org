@@ -26,8 +26,8 @@ export default function ContactPage() {
               support. Every message helps us serve veterans more effectively.
             </p>
             <div className="hero-actions">
-              <a className="button primary" href="tel:+16038180115">
-                Call (603) 818-0115
+              <a className="button primary" href="tel:+17028844175">
+                Call (702) 884-4175
               </a>
               <a className="button secondary" href="mailto:admin@jwvpost619.org">
                 Email Us
@@ -70,7 +70,7 @@ export default function ContactPage() {
               <h3>Phone</h3>
               <p>
                 <strong>
-                  <a href="tel:+16038180115">(603) 818-0115</a>
+                  <a href="tel:+17028844175">(702) 884-4175</a>
                 </strong>
               </p>
               <p>Call for assistance, volunteer interest, or membership inquiries.</p>

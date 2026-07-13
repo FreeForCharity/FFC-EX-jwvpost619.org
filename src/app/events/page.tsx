@@ -114,8 +114,8 @@ export default function EventsPage() {
               </p>
             </div>
             <div className="cta-actions">
-              <a className="button gold" href="tel:+16038180115">
-                Call (603) 818-0115
+              <a className="button gold" href="tel:+17028844175">
+                Call (702) 884-4175
               </a>
               <Link className="button secondary" href="/contact/">
                 Send a Message

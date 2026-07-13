@@ -85,7 +85,7 @@ const Footer: React.FC = () => {
                   href="tel:6038180115"
                   className="text-gray-300 hover:text-[#9d8741] transition-colors"
                 >
-                  (603) 818-0115
+                  (702) 884-4175
                 </a>
               </div>
             </div>

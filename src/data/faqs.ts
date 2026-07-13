@@ -24,7 +24,7 @@ export const homeFaqs: Faq[] = [
   {
     question: 'How can I get involved with JWV Post 619?',
     answer:
-      'You can attend our monthly breakfast meetings held the third Sunday of each month from September through June. You can also volunteer at our Stand Down events, participate in our social luncheons, or contact us directly at jwvpost619@gmail.com or (603) 818-0115.',
+      'You can attend our monthly breakfast meetings held the third Sunday of each month from September through June. You can also volunteer at our Stand Down events, participate in our social luncheons, or contact us directly at jwvpost619@gmail.com or (702) 884-4175.',
   },
   {
     question: 'What is the MANA House partnership?',
@@ -44,7 +44,7 @@ export const homeFaqs: Faq[] = [
   {
     question: 'How do I contact JWV Post 619?',
     answer:
-      'You can reach us by phone at (603) 818-0115, by email at jwvpost619@gmail.com, or by mail at PO Box 13113, Chandler, AZ 85246. You can also find us on Facebook.',
+      'You can reach us by phone at (702) 884-4175, by email at jwvpost619@gmail.com, or by mail at PO Box 13113, Chandler, AZ 85246. You can also find us on Facebook.',
   },
 ]
 
@@ -52,7 +52,7 @@ export const contactFaqs: Faq[] = [
   {
     question: 'What is the best way to reach JWV Post 619?',
     answer:
-      'The best way to reach us is by email at jwvpost619@gmail.com or by phone at (603) 818-0115. We typically respond to inquiries within 1-2 business days.',
+      'The best way to reach us is by email at jwvpost619@gmail.com or by phone at (702) 884-4175. We typically respond to inquiries within 1-2 business days.',
   },
   {
     question: 'Where can I mail correspondence to JWV Post 619?',
@@ -77,7 +77,7 @@ export const contactFaqs: Faq[] = [
   {
     question: 'How do I become a member?',
     answer:
-      'To become a member, please contact us by phone at (603) 818-0115 or email at jwvpost619@gmail.com. We will provide you with membership information and help you through the process.',
+      'To become a member, please contact us by phone at (702) 884-4175 or email at jwvpost619@gmail.com. We will provide you with membership information and help you through the process.',
   },
   {
     question: 'Who should I contact for media or press inquiries?',
