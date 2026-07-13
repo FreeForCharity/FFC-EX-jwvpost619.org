@@ -118,7 +118,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
               <div>
                 <h3>Contact</h3>
                 <p>
-                  <strong>Phone:</strong> (603) 818-0115
+                  <strong>Phone:</strong> (702) 884-4175
                 </p>
                 <p>
                   <strong>Email:</strong> admin@jwvpost619.org
