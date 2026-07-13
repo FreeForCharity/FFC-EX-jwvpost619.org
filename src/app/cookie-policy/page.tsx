@@ -501,7 +501,7 @@ export default function CookiePolicy() {
             </li>
             <li className="text-[14px] text-[#666] leading-[24px] font-[500]">
               <strong>Phone:</strong>{' '}
-              <a href="tel:6038180115" className="text-blue-600 hover:underline">
+              <a href="tel:+17028844175" className="text-blue-600 hover:underline">
                 (702) 884-4175
               </a>
             </li>
