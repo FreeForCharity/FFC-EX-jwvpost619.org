@@ -62,8 +62,8 @@ export default function HomePage() {
           <div className="ribbon-grid">
             <div className="ribbon-item">
               <span className="ribbon-label">Phone</span>
-              <a className="ribbon-value" href="tel:+16038180115">
-                (603) 818-0115
+              <a className="ribbon-value" href="tel:+17028844175">
+                (702) 884-4175
               </a>
             </div>
             <div className="ribbon-item">
@@ -292,7 +292,7 @@ export default function HomePage() {
                 </button>
                 <div className="faq-answer">
                   <p>
-                    Call (603) 818-0115, email admin@jwvpost619.org, or use the contact page to
+                    Call (702) 884-4175, email admin@jwvpost619.org, or use the contact page to
                     reach our team.
                   </p>
                 </div>
