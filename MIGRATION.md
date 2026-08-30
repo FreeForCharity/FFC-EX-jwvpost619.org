@@ -109,12 +109,12 @@ All images were downloaded from the WordPress uploads directory and stored local
 ## Build and Deploy
 
 ```bash
-npm install        # Install dependencies
-npm run format     # Format code
-npm run lint       # Check for lint errors
-npm test           # Run unit tests
-npm run build      # Build static export
-npm run test:e2e   # Run E2E tests
+pnpm install        # Install dependencies
+pnpm run format     # Format code
+pnpm run lint       # Check for lint errors
+pnpm test           # Run unit tests
+pnpm run build      # Build static export
+pnpm run test:e2e   # Run E2E tests
 ```
 
 The site deploys automatically via GitHub Actions when changes are merged to `main`.
