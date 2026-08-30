@@ -3,6 +3,7 @@ import type { ReactNode } from 'react'
 import Script from 'next/script'
 import Link from 'next/link'
 import { RevealInit } from '@/components/reveal-init'
+import { CONSENT_MODE_BOOTSTRAP } from '@/lib/consent-mode'
 
 const basePath = process.env.NEXT_PUBLIC_BASE_PATH || ''
 
@@ -45,6 +46,13 @@ export default function RootLayout({ children }: { children: ReactNode }) {
         />
         <link rel="icon" href={`${basePath}/assets/images/jwv-emblem.jpg`} />
         <link rel="stylesheet" href={`${basePath}/assets/css/styles.css`} />
+        {/* Google Consent Mode v2 defaults — MUST run before any Google tag.
+            This site currently loads no Google tag from the layout; the
+            defaults are inert groundwork so that if GTM/GA4 is ever wired in,
+            the region-scoped consent state is already on the dataLayer first.
+            Granted worldwide, denied (cookieless pings) only where Google's
+            EU User Consent Policy requires opt-in. See src/lib/consent-mode.ts. */}
+        <script dangerouslySetInnerHTML={{ __html: CONSENT_MODE_BOOTSTRAP }} />
       </head>
       <body suppressHydrationWarning>
         <a className="skip-link" href="#main-content">
