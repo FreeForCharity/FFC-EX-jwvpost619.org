@@ -49,9 +49,11 @@ export default function RootLayout({ children }: { children: ReactNode }) {
         {/* Google Consent Mode v2 defaults — MUST run before any Google tag.
             This site currently loads no Google tag from the layout; the
             defaults are inert groundwork so that if GTM/GA4 is ever wired in,
-            the region-scoped consent state is already on the dataLayer first.
-            Granted worldwide, denied (cookieless pings) only where Google's
-            EU User Consent Policy requires opt-in. See src/lib/consent-mode.ts. */}
+            the consent state is already on the dataLayer first. Denied
+            worldwide: one unscoped default withholds analytics and ad storage
+            from every visitor until they opt in, so there is no region left for
+            Google to resolve from the visitor's IP address. See
+            src/lib/consent-mode.ts. */}
         <script dangerouslySetInnerHTML={{ __html: CONSENT_MODE_BOOTSTRAP }} />
       </head>
       <body suppressHydrationWarning>
