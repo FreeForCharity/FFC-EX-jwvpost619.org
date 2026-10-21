@@ -1,12 +1,14 @@
 import type { Metadata } from 'next'
+import Link from 'next/link'
 
 export const metadata: Metadata = {
   title: 'Cookie Policy | JWV Post 619',
-  description: 'Cookie Policy for JWV Post 619 website',
+  description:
+    'How the Jewish War Veterans Post 619 website uses cookies and similar technologies, and how you can opt out of analytics.',
 }
 
 // Update this date when the policy changes
-const LAST_UPDATED = 'December 7, 2025'
+const LAST_UPDATED = 'July 8, 2026'
 
 export default function CookiePolicy() {
   return (
@@ -20,6 +22,11 @@ export default function CookiePolicy() {
             <em>Last Updated: {LAST_UPDATED}</em>
           </p>
 
+          <p className="text-[14px] text-[#666] pb-[10px] leading-[24px] font-[500]">
+            This policy explains how the Jewish War Veterans Post 619 website (jwvpost619.org) uses
+            cookies and similar technologies, and how you can control them.
+          </p>
+
           {/* Section 1 */}
           <ol className="list-decimal list-inside pb-[1em]">
             <li>
@@ -30,40 +37,14 @@ export default function CookiePolicy() {
           </ol>
           <p className="text-[14px] text-[#666] pb-[10px] leading-[24px] font-[500]">
             Cookies are small text files that are placed on your device when you visit a website.
-            They are widely used to make websites work more efficiently and provide information to
-            website owners. Cookies can be &quot;persistent&quot; or &quot;session&quot; cookies.
-            Persistent cookies remain on your device after you close your browser, while session
-            cookies are deleted when you close your browser.
+            They help websites function, remember your preferences, and measure how a site is used.
+            Cookies can be &quot;persistent&quot; or &quot;session&quot; cookies. Persistent cookies
+            remain on your device after you close your browser, while session cookies are deleted
+            when you close your browser.
           </p>
 
           {/* Section 2 */}
           <ol className="list-decimal list-inside pb-[1em]" start={2}>
-            <li>
-              <h2 className="text-[26px] leading-[26px] font-[700] text-[#333] mb-[10px]">
-                <strong>How We Use Cookies</strong>
-              </h2>
-            </li>
-          </ol>
-          <p className="text-[14px] text-[#666] pb-[10px] leading-[24px] font-[500]">
-            When you visit our website, we use cookies to:
-          </p>
-          <ul className="list-disc list-inside space-y-[4px] pb-[1em]">
-            <li className="text-[14px] text-[#666] leading-[24px] font-[500]">
-              Remember your cookie consent preferences
-            </li>
-            <li className="text-[14px] text-[#666] leading-[24px] font-[500]">
-              Understand how you use our website (with your consent)
-            </li>
-            <li className="text-[14px] text-[#666] leading-[24px] font-[500]">
-              Analyze website traffic and user behavior (with your consent)
-            </li>
-            <li className="text-[14px] text-[#666] leading-[24px] font-[500]">
-              Improve our website and user experience
-            </li>
-          </ul>
-
-          {/* Section 3 */}
-          <ol className="list-decimal list-inside pb-[1em]" start={3}>
             <li>
               <h2 className="text-[26px] leading-[26px] font-[700] text-[#333] mb-[10px]">
                 <strong>Types of Cookies We Use</strong>
@@ -71,14 +52,14 @@ export default function CookiePolicy() {
             </li>
           </ol>
 
-          {/* 3.1 Necessary Cookies */}
+          {/* 2.1 Necessary + Functional */}
           <p className="text-[14px] text-[#666] pb-[10px] leading-[24px] font-[500]">
-            <strong>3.1 Necessary Cookies (Always Active)</strong>
+            <strong>2.1 Necessary and Functional Cookies (Always Active)</strong>
           </p>
           <p className="text-[14px] text-[#666] pb-[10px] leading-[24px] font-[500]">
-            These cookies are essential for the website to function properly. They enable basic
-            features like storing your cookie consent preferences. These cookies do not store any
-            personally identifiable information and cannot be disabled.
+            A small amount of information is stored to make the site work and to remember your
+            cookie choices. These are set regardless of consent because the site cannot function
+            properly without them, and they do not track you across other sites.
           </p>
           <div className="bg-gray-50 p-4 rounded-lg mb-4 overflow-x-auto">
             <table className="w-full text-sm">
@@ -99,127 +80,21 @@ export default function CookiePolicy() {
             </table>
           </div>
 
-          {/* 3.2 Functional Cookies */}
+          {/* 2.2 Analytics (opt-out) */}
           <p className="text-[14px] text-[#666] pb-[10px] leading-[24px] font-[500] mt-[1em]">
-            <strong>3.2 Functional Cookies (Always Active)</strong>
+            <strong>2.2 Analytics Cookies (On by default — you can opt out)</strong>
           </p>
           <p className="text-[14px] text-[#666] pb-[10px] leading-[24px] font-[500]">
-            These cookies enable essential functionality such as donation processing and application
-            forms. They are necessary for these services to work and cannot be disabled if you wish
-            to use these features.
+            We use Google Tag Manager and Google Analytics 4 (GA4) to understand aggregate,
+            non-identifying site usage so we can improve the site. Analytics runs by default, but
+            you can decline at any time through our cookie-consent banner. Declining stops analytics
+            on this browser and deletes the analytics cookies listed below.
           </p>
-
-          {/* Microsoft Forms */}
           <div className="bg-gray-50 p-4 rounded-lg mb-4">
-            <h4 className="font-semibold mb-2 text-[#333]">Microsoft Forms</h4>
+            <h4 className="font-semibold mb-2 text-[#333]">Google Analytics 4</h4>
             <p className="text-sm mb-2 text-[#666]">
-              Used for our charity application form. Microsoft Forms may load additional third-party
-              services (including HubSpot) for form analytics and feedback collection. These
-              services are controlled by Microsoft.
-            </p>
-            <div className="overflow-x-auto">
-              <table className="w-full text-sm">
-                <thead>
-                  <tr className="border-b">
-                    <th className="text-left py-2 pr-4 text-[#333]">Service</th>
-                    <th className="text-left py-2 pr-4 text-[#333]">Purpose</th>
-                    <th className="text-left py-2 text-[#333]">Load Trigger</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr className="border-b">
-                    <td className="py-2 pr-4 font-mono text-[#666]">Microsoft Forms</td>
-                    <td className="py-2 pr-4 text-[#666]">Charity application form processing</td>
-                    <td className="py-2 text-[#666]">When application modal opened</td>
-                  </tr>
-                  <tr>
-                    <td className="py-2 pr-4 font-mono text-[#666]">
-                      HubSpot (via Microsoft Forms)
-                    </td>
-                    <td className="py-2 pr-4 text-[#666]">Form analytics and feedback</td>
-                    <td className="py-2 text-[#666]">Loaded by Microsoft Forms</td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-            <p className="text-xs mt-2 text-gray-600">
-              Privacy Policy:{' '}
-              <a
-                href="https://privacy.microsoft.com/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-blue-600 hover:underline"
-              >
-                https://privacy.microsoft.com/
-              </a>
-            </p>
-            <p className="text-xs mt-1 text-gray-600">
-              HubSpot Privacy:{' '}
-              <a
-                href="https://legal.hubspot.com/privacy-policy"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-blue-600 hover:underline"
-              >
-                https://legal.hubspot.com/privacy-policy
-              </a>
-            </p>
-          </div>
-
-          {/* Zeffy */}
-          <div className="bg-gray-50 p-4 rounded-lg mb-4">
-            <h4 className="font-semibold mb-2 text-[#333]">Zeffy Donation Platform</h4>
-            <p className="text-sm mb-2 text-[#666]">
-              Zero-fee donation processing platform embedded on our website to accept donations.
-            </p>
-            <div className="overflow-x-auto">
-              <table className="w-full text-sm">
-                <thead>
-                  <tr className="border-b">
-                    <th className="text-left py-2 pr-4 text-[#333]">Service</th>
-                    <th className="text-left py-2 pr-4 text-[#333]">Purpose</th>
-                    <th className="text-left py-2 text-[#333]">Load Trigger</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td className="py-2 pr-4 font-mono text-[#666]">Zeffy</td>
-                    <td className="py-2 pr-4 text-[#666]">Donation form and payment processing</td>
-                    <td className="py-2 text-[#666]">Embedded on donation section</td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-            <p className="text-xs mt-2 text-gray-600">
-              Privacy Policy:{' '}
-              <a
-                href="https://www.zeffy.com/privacy"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-blue-600 hover:underline"
-              >
-                https://www.zeffy.com/privacy
-              </a>
-            </p>
-          </div>
-
-          {/* 3.3 Analytics Cookies */}
-          <p className="text-[14px] text-[#666] pb-[10px] leading-[24px] font-[500] mt-[1em]">
-            <strong>3.3 Analytics Cookies (Requires Consent)</strong>
-          </p>
-          <p className="text-[14px] text-[#666] pb-[10px] leading-[24px] font-[500]">
-            These cookies help us understand how visitors interact with our website by collecting
-            and reporting information anonymously. We use this information to improve our website
-            and user experience.
-          </p>
-
-          {/* Google Analytics */}
-          <div className="bg-gray-50 p-4 rounded-lg mb-4">
-            <h4 className="font-semibold mb-2 text-[#333]">Google Analytics</h4>
-            <p className="text-sm mb-2 text-[#666]">
-              Google Analytics is a web analytics service offered by Google that tracks and reports
-              website traffic. We use Google Analytics to understand how users interact with our
-              website.
+              Google Analytics is a web analytics service offered by Google that reports aggregate
+              website traffic. GA4 loads through our Google Tag Manager container.
             </p>
             <div className="overflow-x-auto">
               <table className="w-full text-sm">
@@ -233,7 +108,7 @@ export default function CookiePolicy() {
                 <tbody>
                   <tr className="border-b">
                     <td className="py-2 pr-4 font-mono text-[#666]">_ga</td>
-                    <td className="py-2 pr-4 text-[#666]">Distinguishes unique users</td>
+                    <td className="py-2 pr-4 text-[#666]">Distinguishes unique visitors</td>
                     <td className="py-2 text-[#666]">2 years</td>
                   </tr>
                   <tr className="border-b">
@@ -243,7 +118,7 @@ export default function CookiePolicy() {
                   </tr>
                   <tr>
                     <td className="py-2 pr-4 font-mono text-[#666]">_gid</td>
-                    <td className="py-2 pr-4 text-[#666]">Distinguishes users</td>
+                    <td className="py-2 pr-4 text-[#666]">Distinguishes visitors</td>
                     <td className="py-2 text-[#666]">24 hours</td>
                   </tr>
                 </tbody>
@@ -262,195 +137,90 @@ export default function CookiePolicy() {
             </p>
           </div>
 
-          {/* Microsoft Clarity */}
-          <div className="bg-gray-50 p-4 rounded-lg mb-4">
-            <h4 className="font-semibold mb-2 text-[#333]">Microsoft Clarity</h4>
-            <p className="text-sm mb-2 text-[#666]">
-              Microsoft Clarity is a user behavior analytics tool that helps us understand how users
-              interact with our website through session recordings and heatmaps.
-            </p>
-            <div className="overflow-x-auto">
-              <table className="w-full text-sm">
-                <thead>
-                  <tr className="border-b">
-                    <th className="text-left py-2 pr-4 text-[#333]">Cookie Name</th>
-                    <th className="text-left py-2 pr-4 text-[#333]">Purpose</th>
-                    <th className="text-left py-2 text-[#333]">Duration</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr className="border-b">
-                    <td className="py-2 pr-4 font-mono text-[#666]">_clck</td>
-                    <td className="py-2 pr-4 text-[#666]">Persists Clarity User ID</td>
-                    <td className="py-2 text-[#666]">1 year</td>
-                  </tr>
-                  <tr>
-                    <td className="py-2 pr-4 font-mono text-[#666]">_clsk</td>
-                    <td className="py-2 pr-4 text-[#666]">Session cookie</td>
-                    <td className="py-2 text-[#666]">1 day</td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-            <p className="text-xs mt-2 text-gray-600">
-              Privacy Policy:{' '}
-              <a
-                href="https://privacy.microsoft.com/en-us/privacystatement"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-blue-600 hover:underline"
-              >
-                https://privacy.microsoft.com/privacystatement
-              </a>
-            </p>
-          </div>
-
-          {/* 3.4 Marketing Cookies */}
+          {/* 2.3 Third-party embedded services */}
           <p className="text-[14px] text-[#666] pb-[10px] leading-[24px] font-[500] mt-[1em]">
-            <strong>3.4 Marketing Cookies (Requires Consent)</strong>
+            <strong>2.3 Third-Party Services</strong>
           </p>
           <p className="text-[14px] text-[#666] pb-[10px] leading-[24px] font-[500]">
-            These cookies are used to track visitors across websites. The intention is to display
-            ads that are relevant and engaging for users and thereby more valuable for publishers
-            and advertisers.
+            Some pages embed outside services. When you use them, those services may set their own
+            cookies, which are controlled by the third party rather than by JWV Post 619.
           </p>
-
-          {/* Meta Pixel */}
           <div className="bg-gray-50 p-4 rounded-lg mb-4">
-            <h4 className="font-semibold mb-2 text-[#333]">Meta Pixel (Facebook Pixel)</h4>
+            <h4 className="font-semibold mb-2 text-[#333]">Microsoft Forms</h4>
             <p className="text-sm mb-2 text-[#666]">
-              The Meta Pixel is an analytics tool that helps us measure the effectiveness of
-              advertising by understanding the actions people take on our website.
+              Used for our application/contact form. Microsoft Forms may load additional
+              Microsoft-controlled services when the form is opened.
             </p>
-            <div className="overflow-x-auto">
-              <table className="w-full text-sm">
-                <thead>
-                  <tr className="border-b">
-                    <th className="text-left py-2 pr-4 text-[#333]">Cookie Name</th>
-                    <th className="text-left py-2 pr-4 text-[#333]">Purpose</th>
-                    <th className="text-left py-2 text-[#333]">Duration</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr className="border-b">
-                    <td className="py-2 pr-4 font-mono text-[#666]">_fbp</td>
-                    <td className="py-2 pr-4 text-[#666]">Tracks user behavior for advertising</td>
-                    <td className="py-2 text-[#666]">3 months</td>
-                  </tr>
-                  <tr>
-                    <td className="py-2 pr-4 font-mono text-[#666]">fr</td>
-                    <td className="py-2 pr-4 text-[#666]">Enables ad delivery and targeting</td>
-                    <td className="py-2 text-[#666]">3 months</td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
             <p className="text-xs mt-2 text-gray-600">
               Privacy Policy:{' '}
               <a
-                href="https://www.facebook.com/privacy/policy/"
+                href="https://privacy.microsoft.com/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-blue-600 hover:underline"
               >
-                https://www.facebook.com/privacy/policy/
+                https://privacy.microsoft.com/
               </a>
             </p>
           </div>
 
-          {/* Section 4 */}
-          <ol className="list-decimal list-inside pb-[1em]" start={4}>
+          {/* Section 3 */}
+          <ol className="list-decimal list-inside pb-[1em]" start={3}>
             <li>
               <h2 className="text-[26px] leading-[26px] font-[700] text-[#333] mb-[10px]">
-                <strong>How to Manage Cookies</strong>
+                <strong>Managing Your Choices</strong>
               </h2>
             </li>
           </ol>
 
           <p className="text-[14px] text-[#666] pb-[10px] leading-[24px] font-[500]">
-            You have several options for managing cookies:
-          </p>
-
-          <p className="text-[14px] text-[#666] pb-[10px] leading-[24px] font-[500]">
-            <strong>4.1 Cookie Consent Banner</strong>
+            <strong>3.1 Cookie Consent Banner</strong>
           </p>
           <p className="text-[14px] text-[#666] pb-[10px] leading-[24px] font-[500]">
-            When you first visit our website, you&apos;ll see a cookie consent banner. You can:
+            Analytics runs by default so we can measure aggregate usage, but you are always free to
+            opt out. Our cookie-consent banner lets you:
           </p>
           <ul className="list-disc list-inside space-y-[4px] pb-[1em]">
             <li className="text-[14px] text-[#666] leading-[24px] font-[500]">
-              <strong>Accept All:</strong> Allow all cookies including analytics and marketing
+              <strong>Accept All:</strong> Keep analytics enabled.
             </li>
             <li className="text-[14px] text-[#666] leading-[24px] font-[500]">
-              <strong>Decline All:</strong> Only essential cookies will be used
+              <strong>Decline All:</strong> Turn analytics off on this browser and delete analytics
+              cookies such as <code>_ga</code>. Only necessary and functional cookies remain.
             </li>
             <li className="text-[14px] text-[#666] leading-[24px] font-[500]">
-              <strong>Customize:</strong> Choose which types of cookies you want to allow
+              <strong>Customize:</strong> Choose whether to allow analytics cookies.
             </li>
           </ul>
 
           <p className="text-[14px] text-[#666] pb-[10px] leading-[24px] font-[500] mt-[1em]">
-            <strong>4.2 Browser Settings</strong>
+            <strong>3.2 Browser Settings</strong>
           </p>
           <p className="text-[14px] text-[#666] pb-[10px] leading-[24px] font-[500]">
-            Most web browsers allow you to control cookies through their settings. You can
-            typically:
-          </p>
-          <ul className="list-disc list-inside space-y-[4px] pb-[1em]">
-            <li className="text-[14px] text-[#666] leading-[24px] font-[500]">
-              View what cookies are stored and delete them individually
-            </li>
-            <li className="text-[14px] text-[#666] leading-[24px] font-[500]">
-              Block third-party cookies
-            </li>
-            <li className="text-[14px] text-[#666] leading-[24px] font-[500]">
-              Block all cookies from specific websites
-            </li>
-            <li className="text-[14px] text-[#666] leading-[24px] font-[500]">
-              Block all cookies from being set
-            </li>
-            <li className="text-[14px] text-[#666] leading-[24px] font-[500]">
-              Delete all cookies when you close your browser
-            </li>
-          </ul>
-          <p className="text-[14px] text-[#666] pb-[10px] leading-[24px] font-[500]">
-            Please note that if you block all cookies, you may not be able to use all features of
-            our website.
+            Most web browsers let you view, delete, and block cookies through their settings.
+            Clearing this site&apos;s cookies and stored data brings the consent banner back on your
+            next visit so you can choose differently. Please note that if you block all cookies, you
+            may not be able to use all features of our website.
           </p>
 
           <p className="text-[14px] text-[#666] pb-[10px] leading-[24px] font-[500] mt-[1em]">
-            <strong>4.3 Opt-Out Links</strong>
+            <strong>3.3 Google Analytics Opt-Out</strong>
           </p>
           <p className="text-[14px] text-[#666] pb-[10px] leading-[24px] font-[500]">
-            You can opt out of specific third-party cookies:
+            You can also opt out of Google Analytics across all sites using the{' '}
+            <a
+              href="https://tools.google.com/dlpage/gaoptout"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-blue-600 hover:underline"
+            >
+              Google Analytics Opt-out Browser Add-on
+            </a>
+            .
           </p>
-          <ul className="list-disc list-inside space-y-[4px] pb-[1em]">
-            <li className="text-[14px] text-[#666] leading-[24px] font-[500]">
-              <strong>Google Analytics:</strong>{' '}
-              <a
-                href="https://tools.google.com/dlpage/gaoptout"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-blue-600 hover:underline"
-              >
-                Google Analytics Opt-out Browser Add-on
-              </a>
-            </li>
-            <li className="text-[14px] text-[#666] leading-[24px] font-[500]">
-              <strong>Meta (Facebook):</strong>{' '}
-              <a
-                href="https://www.facebook.com/settings/?tab=ads"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-blue-600 hover:underline"
-              >
-                Facebook Ad Settings
-              </a>
-            </li>
-          </ul>
 
-          {/* Section 5 */}
-          <ol className="list-decimal list-inside pb-[1em]" start={5}>
+          {/* Section 4 */}
+          <ol className="list-decimal list-inside pb-[1em]" start={4}>
             <li>
               <h2 className="text-[26px] leading-[26px] font-[700] text-[#333] mb-[10px]">
                 <strong>Do Not Track Signals</strong>
@@ -460,12 +230,12 @@ export default function CookiePolicy() {
           <p className="text-[14px] text-[#666] pb-[10px] leading-[24px] font-[500]">
             Some browsers have a &quot;Do Not Track&quot; feature that lets you tell websites that
             you do not want to have your online activities tracked. At this time, we do not respond
-            to browser &quot;Do Not Track&quot; signals. However, you can control cookies through
+            to browser &quot;Do Not Track&quot; signals. However, you can turn off analytics through
             our cookie consent banner.
           </p>
 
-          {/* Section 6 */}
-          <ol className="list-decimal list-inside pb-[1em]" start={6}>
+          {/* Section 5 */}
+          <ol className="list-decimal list-inside pb-[1em]" start={5}>
             <li>
               <h2 className="text-[26px] leading-[26px] font-[700] text-[#333] mb-[10px]">
                 <strong>Updates to This Cookie Policy</strong>
@@ -478,8 +248,8 @@ export default function CookiePolicy() {
             periodically for changes.
           </p>
 
-          {/* Section 7 */}
-          <ol className="list-decimal list-inside pb-[1em]" start={7}>
+          {/* Section 6 */}
+          <ol className="list-decimal list-inside pb-[1em]" start={6}>
             <li>
               <h2 className="text-[26px] leading-[26px] font-[700] text-[#333] mb-[10px]">
                 <strong>Contact Us</strong>
@@ -497,9 +267,6 @@ export default function CookiePolicy() {
               </a>
             </li>
             <li className="text-[14px] text-[#666] leading-[24px] font-[500]">
-              <strong>Emergency Contact:</strong> JWV Post 619 Administrator
-            </li>
-            <li className="text-[14px] text-[#666] leading-[24px] font-[500]">
               <strong>Phone:</strong>{' '}
               <a href="tel:+17028844175" className="text-blue-600 hover:underline">
                 (702) 884-4175
@@ -507,8 +274,8 @@ export default function CookiePolicy() {
             </li>
           </ul>
 
-          {/* Section 8 */}
-          <ol className="list-decimal list-inside pb-[1em]" start={8}>
+          {/* Section 7 */}
+          <ol className="list-decimal list-inside pb-[1em]" start={7}>
             <li>
               <h2 className="text-[26px] leading-[26px] font-[700] text-[#333] mb-[10px]">
                 <strong>More Information</strong>
@@ -517,9 +284,9 @@ export default function CookiePolicy() {
           </ol>
           <p className="text-[14px] text-[#666] pb-[10px] leading-[24px] font-[500]">
             For more information about how we handle your personal data, please see our{' '}
-            <a href="/privacy-policy/" className="text-blue-600 hover:underline">
+            <Link href="/privacy-policy/" className="text-blue-600 hover:underline">
               Privacy Policy
-            </a>
+            </Link>
             .
           </p>
         </div>

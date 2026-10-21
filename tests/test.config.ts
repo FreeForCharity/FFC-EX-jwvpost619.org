@@ -71,10 +71,12 @@ export const testConfig = {
 
   /**
    * Google Tag Manager Configuration
-   * Note: GTM is not used on this site; these tests will be skipped.
+   * Note: GTM (container GTM-MX3HMLWB, GA4 G-P53SH2GC9L) is now wired into the site.
+   * The detailed GTM E2E spec remains skipped pending an opt-out-model rewrite; the
+   * opt-out cookie-consent behavior is covered by the Jest unit test.
    */
   googleTagManager: {
-    id: 'GTM-TQ5H8HPR',
+    id: 'GTM-MX3HMLWB',
   },
 
   /**

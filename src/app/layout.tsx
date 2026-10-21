@@ -3,6 +3,8 @@ import type { ReactNode } from 'react'
 import Script from 'next/script'
 import Link from 'next/link'
 import { RevealInit } from '@/components/reveal-init'
+import GoogleTagManager, { GoogleTagManagerNoScript } from '@/components/google-tag-manager'
+import CookieConsent from '@/components/cookie-consent'
 
 const basePath = process.env.NEXT_PUBLIC_BASE_PATH || ''
 
@@ -45,8 +47,10 @@ export default function RootLayout({ children }: { children: ReactNode }) {
         />
         <link rel="icon" href={`${basePath}/assets/images/jwv-emblem.jpg`} />
         <link rel="stylesheet" href={`${basePath}/assets/css/styles.css`} />
+        <GoogleTagManager />
       </head>
       <body suppressHydrationWarning>
+        <GoogleTagManagerNoScript />
         <a className="skip-link" href="#main-content">
           Skip to main content
         </a>
@@ -150,6 +154,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
 
         <RevealInit />
         <Script src={`${basePath}/assets/js/site.js`} strategy="lazyOnload" />
+        <CookieConsent />
       </body>
     </html>
   )
